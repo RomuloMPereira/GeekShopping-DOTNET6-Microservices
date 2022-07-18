@@ -32,6 +32,9 @@ namespace GeekShopping.Web
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
             app.UseRouting();
