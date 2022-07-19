@@ -23,7 +23,7 @@ namespace GeekShopping.IdentityServer
             services.AddDbContext<MySQLContext>(options => options.
                 UseMySql(connection,
                         new MySqlServerVersion(
-                            new Version(8, 0, 5))));
+                            new Version(8, 0, 29))));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<MySQLContext>()
